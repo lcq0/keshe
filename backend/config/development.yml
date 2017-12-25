@@ -1,0 +1,14 @@
+#mysql cofnig
+mongoose:
+  schemaConfig:
+    autoIndex: true
+mongodb:
+  db: mongodb://127.0.0.1/message_development
+  dbName: message_development
+redis:
+  port: 6379
+  host: 127.0.0.1
+  options:
+jwt:
+  secret: dL2NZCtVQGZIa_OHC
+  exp: 7

@@ -1,0 +1,23 @@
+version: "2.0"
+services:
+  api-manage:
+    build: .
+    volumes:
+      - ./:/weixin-server
+    ports:
+      - "443:443"
+    links:
+      - mongodb
+      - redis
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - /home/ubuntu/db/mongodb
+  redis:
+    image: daocloud.io/library/redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - /home/ubuntu/db/redis

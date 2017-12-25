@@ -1,0 +1,7 @@
+{
+  "verbose": true,
+  "ignore": ["app/assets", "public/assets/", "logs"],
+  "execMap": {
+    "js": "node"
+  }
+}
